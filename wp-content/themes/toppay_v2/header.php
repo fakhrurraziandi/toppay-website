@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>  data-spy="scroll" data-target="#navbar1" data-offset="10">
 
 	<nav id="main-navbar" class="navbar navbar-expand-md navbar-light fixed-top bg-light">
 		<div class="container">
@@ -34,7 +34,8 @@
 				$args = [
 					'theme_location' => 'primary',
 					'container' => 'ul',
-					'menu_class' => 'navbar-nav nav ml-auto'
+					'menu_class' => 'navbar-nav nav ml-auto',
+					'menu_id' => 'navbar1'
 				]; 
 				wp_nav_menu($args) 
 				?>

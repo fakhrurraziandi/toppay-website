@@ -16,7 +16,7 @@ $(document).ready(function(){
 	window.sr = ScrollReveal({ 
 		reset: true,
 		distance: '20px',
-		duration: 1000,
+		duration: 5000,
 		delay: 200,
 	});
 

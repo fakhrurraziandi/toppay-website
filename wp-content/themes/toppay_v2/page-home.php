@@ -18,7 +18,8 @@
 						<img src="<?php echo get_template_directory_uri() ?>/assets/dist/img/toppay-dark.png" alt="" class="img-fluid mb-4 logo-dark">
 						<img src="<?php echo get_template_directory_uri() ?>/assets/dist/img/toppay-light.png" alt="" class="img-fluid mb-4 logo-light">
 						<p class="mb-4"><?php bloginfo('description') ?></p>
-						<a href="#" class="btn btn-outline-primary btn-md btn-download py-3 px-3">Download Aplikasi Android <i class="fa fa-android"></i></a>
+						<?php echo get_custom('url_play_store') ? '<a href="'. get_custom('url_play_store') .'" class="btn btn-outline-primary btn-md btn-download py-3 px-3">Download Aplikasi Android <i class="fa fa-android"></i></a>' : '' ?>
+						<?php echo get_custom('url_app_store') ? '<a href="'. get_custom('url_app_store') .'" class="btn btn-outline-primary btn-md btn-download py-3 px-3">Download Aplikasi IOS <i class="fa fa-apple"></i></a>' : '' ?>
 					</div>
 				</div>
 			</div>

@@ -46,5 +46,19 @@
 
 <?php wp_footer(); ?>
 
+
+<?php if(!is_front_page()): ?>
+	<script>
+		$(function(){
+			$('#navbar1').find('li.nav-item a').each(function(index, element){
+				var href = $(element).attr('href');
+				if(href.substr(0, 1) === "#"){
+					$(element).attr('href', '<?php bloginfo('url') ?>' + href);
+				}
+			});
+		})
+	</script>
+<?php endif; ?>
+
 </body>
 </html>
